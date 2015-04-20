@@ -16,7 +16,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -44,13 +45,28 @@
 				<section>
 					<h1>Tasking Manager</h1>
 					<h3>Past, Present & Future</h3>
-					<h4>HOT Summit</h4>
 					<p>
-						<small><a href="http://www.github.com/pgiraud">Pierre GIRAUD</a> / <a href="http://twitter.com/pgira">@pgira</a></small>
+						<small>By <a href="http://www.github.com/pgiraud">Pierre GIRAUD</a> / <a href="http://twitter.com/pgira">@pgira</a> for <b>HOT Summit 2015</b></small>
 					</p>
 					<aside class="notes">
 						Say hello to every body.
 					</aside>
+				</section>
+
+				<section data-background="images/nivolet.jpg" style="top: 198.5px; display: block;" data-background-image="images/nivolet.jpg">
+					<h2>Who Am I?</h2>
+					<p>I'm from France.</p>
+					<p>I like hiking, skiing, cycling, coding, mapping.</p>
+				</section>
+
+				<section data-background="images/camptocamp.png" style="" data-background-image="images/camptocamp.png" class="present">
+					<h2>Who Am I?</h2>
+					<p>
+						Developer at
+						<br>
+						<img src="images/camptocamp_logo.png">
+					</p>
+					<p class="attributions">© OpenStreetMap contributors © CartoDB, CartoDB attribution</p>
 				</section>
 
 				<section>
@@ -72,18 +88,8 @@
 				<section>
 					<h2>Who Am I?</h2>
 					<p class="fragment">
-						Developer @camptocamp.
-						<br>
-						<img src="images/camptocamp_logo.png">
-						<img src="images/camptocamp_location.jpg" height="300">
-					</p>
-				</section>
-
-				<section>
-					<h2>Who Am I?</h2>
-					<p class="fragment">
 						HOT voting member
-						since 20??
+						since 2012
 					</p>
 				</section>
 
@@ -97,25 +103,178 @@
 					<h2>
 						How did it start?
 					</h2>
+					<p class="fragment">
+						At the begining, there was:
+					</p>
 					<h3 class="fragment">
 						QualityStreetMap
 						<br>
 						OSMQA
+						<br>
 					</h3>
+					<p class="fragment">
+						<em>QA</em> for <b>Quality Assurance</b>
+						<br>
+					</p>
+					<small class="fragment">
+						Code written with François Van der Biest
+					</small>
 					<aside class="notes">
 						Who has ever heard of QualityStreetMap?
 					</aside>
 				</section>
 
 				<section>
+					<img src="images/osmqa2.png" />
+				</section>
+
+				<section>
+					<h2>May 2011</h2>
+				</section>
+				<section>
 					<p>
 						Mail from @Kate.
 					</p>
+					<p>Subject: OSM Tasking Tool</p>
+					<q>
+						Interested in developping a tool to help coordination of mappers & surveyors in Indonesia.
+					</q>
+				</section>
+
+				<section>
+					<q>
+						“OpenStreetMap has been shown to be an effective collection mechanism for infrastructure data.  One thing that is lacking is the ability to coordinate workers surveying in the field or working remotely.  The goal of the <b>OpenStreetMap Tasking Tool</b> is to make it easy for administrators to define <b>collection areas of interest</b> and collection workflows as well as allowing <b>workers to easily determine what areas they should be working on</b>.”
+					</q>
+				</section>
+
+				<section>
+					<h3 class="fragment">
+						OSMQA to the rescue?
+					</h3>
+					<p class="fragment">
+						Same principle: area divided into grids.
+					</p>
+					<h3 class="fragment">
+						Forking?
+					</h3>
+					<p class="fragment">
+						Nope
+						<br>
+						-> Scope was too different
+					</p>
+				</section>
+
+				<section>
+					<h2>July 2011</h2>
+				</section>
+
+				<section>
+					<p>
+						Contract between<br>HOT and Camptocamp.
+					</p>
+					<p>
+						12'500$
+					</p>
+				</section>
+				<section>
+					<p>
+						Initial set of features:
+					</p>
+					<ul>
+						<li class="fragment">Job creation</li>
+						<li class="fragment">Square tiles</li>
+						<li class="fragment">OSM auth</li>
+						<li class="fragment">Check in - check out (Lock)</li>
+						<li class="fragment">Validation</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>
+						Technology:
+					</p>
+					<table>
+						<tr>
+							<td>
+								<img src="images/pylons.png">
+							</td>
+							<td>
+								<img src="images/sqlite.gif">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Pyramid framework
+							</td>
+							<td>
+								SQLite
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<p>
+						Project delivered in <em>September 2011</em>
+					</p>
+				</section>
+
+				<section>
+					<h3>Was that finished?</h3>
+					<p class="fragment">
+						It was working but features were missing in my opinion.
+					</p>
+				</section>
+
+				<section>
+					I continued the work on my own <br>
+					<em>(with some help from Schuyler Erle)</em>.
+				</section>
+
+				<section>
+					<ul>
+						<li class="fragment">Private jobs</li>
+						<li class="fragment">License agreements</li>
+						<li class="fragment">Many more addition or fixes</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>October 2012</h3>
+					Code moved to <a href="http://github.com/hotosm">HOT OSM</a> organization on github
+					<br>
+					<a href="https://github.com/hotosm/osm-tasking-manager">osm-tasking-manager</a>
+				</section>
+
+				<section>
+					<h2>Towards Version 2</h2>
+				</section>
+
+				<section>
+					<h3>September 2013</h3>
+					<p>I decided to restart form scratch</p>
+				</section>
+
+				<section>
+					<p>
+						Main goals:
+					</p>
+					<ul>
+						<li class="fragment">Better data model</li>
+						<li class="fragment">PostGIS support</li>
+						<li class="fragment">i18n - Language suport</li>
+					</ul>
 				</section>
 
 				<section>
 					<h2>
 						They talk about it!
+					</h2>
+				</section>
+
+				<section>
+					<h2>
+						They use it!
 					</h2>
 				</section>
 

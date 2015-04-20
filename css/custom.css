@@ -1,0 +1,65 @@
+img {
+	border: none !important;
+	background: none !important;
+	box-shadow: none !important;
+}
+
+body {
+  background: #001c20;
+  background: -moz-radial-gradient(center, circle cover, #225a5f 0%, #001c20 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #225a5f), color-stop(100%, #001c20));
+  background: -webkit-radial-gradient(center, circle cover, #225a5f 0%, #001c20 100%);
+  background: -o-radial-gradient(center, circle cover, #225a5f 0%, #001c20 100%);
+  background: -ms-radial-gradient(center, circle cover, #225a5f 0%, #001c20 100%);
+  background: radial-gradient(center, circle cover, #225a5f 0%, #001c20 100%);
+  background-color: #001c20;
+}
+
+.attributions {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 0.3em !important;
+	color: #dfdfdf;
+}
+
+.reveal a {
+  color: #B6B2A7;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+
+td {
+	text-align: center !important;
+	vertical-align: middle !important;
+	border-bottom: none !important;
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
+  border-right-color: #ffffff; }
+
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
+  border-left-color: #ffffff; }
+
+.reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #ffffff; }
+
+.reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
+  border-top-color: #ffffff; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #ffffff; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #ffffff; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #ffffff; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #ffffff; }
