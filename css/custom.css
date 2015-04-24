@@ -37,6 +37,10 @@ td {
 	border-bottom: none !important;
 }
 
+.reveal small {
+	vertical-align: baseline;
+}
+
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
